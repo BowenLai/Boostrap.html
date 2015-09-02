@@ -21,23 +21,54 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodal">Click</button>
+        <div class="col-md-12">
+          <div id="my-slider" class="carousel slide" data-ride="carousel" >
+            <!--indicators dot nav-->
+            <ol class="carousel-indicator">
+              <li data-target="my-slider" data-slide-to="0"class="active"></li>
+              <li data-target="my-slider" data-slide-to="1"></li>
+              <li data-target="my-slider" data-slide-to="2"></li>
+            </ol>
 
-          <div class="modal fade" id="mymodal">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h3>title for modal</h3>
+
+            <!--wrapper ofr slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="imgs/img1.jpg" alt="other">
+                <div class="carousel-caption">
+                  <h1>There should have some words</h1>
                 </div>
-                <div class="modal-body"><p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p></div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <div class="item active">
+                <img src="imgs/img2.jpg" alt="other">
+                <div class="carousel-caption">
+                  <h1>There should have some words,too</h1>
+                </div>
+              </div>
+              <div class="item active">
+                <img src="imgs/img3.jpg" alt="other">
+                <div class="carousel-caption">
+                  <h1>  Same as above.</h1>
                 </div>
               </div>
             </div>
-          </div>
 
+
+            <!--controls or next and prev buttons-->
+            <a class="left carousel-control" href="#my-slider" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="right carousel-control" href="#my-slider" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+
+
+
+          </div>
         </div>
       </div>
     </div>
